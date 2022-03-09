@@ -4,7 +4,6 @@
     --secondary-background: #2D31FA;
     --border: #051367;
     --primary-text: #051367;
-    /* --secondary-text: #DFF6FF; */
 }
 
 /* general styles */
@@ -153,5 +152,41 @@ footer {
 footer p {
     color: #fff;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1.0rem;
+}
+
+/* media query for desktop screens */
+@media screen and (min-width: 980px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+    }
+
+    header nav ul li a:hover {
+        color: #ababab;
+    }
+
+    footer {
+        padding: 20px
+    }
 }
