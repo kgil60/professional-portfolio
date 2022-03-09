@@ -95,6 +95,43 @@ header nav ul li a {
     color: #000;
 }
 
+/* style work section */
+.work-cards {
+    /* width: 100%; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-text);
+    margin: 20px;
+    flex: 1;
+}
+
+.project img {
+    width: 100%
+}
+
+.project div {
+    color: #fff;
+    padding: 2% 12%;
+    line-height: 1.5;
+}
+
+.project h4 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.first-child {
+    flex-basis: 100%;
+}
+
 /* style contact section */
 .contact ul {
     list-style: none;
