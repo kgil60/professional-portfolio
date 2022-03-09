@@ -1,8 +1,10 @@
 /* variables */
 :root {
     --primary-background: #DFF6FF;
+    --secondary-background: #2D31FA;
+    --border: #051367;
     --primary-text: #051367;
-    /* --secondary-text: # */
+    /* --secondary-text: #DFF6FF; */
 }
 
 /* general styles */
@@ -20,7 +22,7 @@ body {
 
 /* style header */
 header {
-    background-color: #2D31FA;
+    background-color: var(--secondary-background);
     padding: 20px 35px;
     display: flex;
     flex-direction: column;
@@ -59,6 +61,7 @@ header nav ul li a {
     flex-direction: column;
     align-items: center;
     padding: 4%;
+    border-bottom: 2px solid var(--border);
 }
 
 .about-content h2 {
@@ -88,4 +91,67 @@ header nav ul li a {
     font-size: 16px;
     line-height: 1.5rem;
     color: #000;
+}
+
+/* style work section */
+.work-content {
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+    border-bottom: 2px solid var(--border);
+}
+
+.work-content h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* style contact section */
+.contact {
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4%;
+}
+
+.contact h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.contact ul {
+    list-style: none;
+    text-align: center;
+}
+
+.contact ul li {
+    margin-bottom: 10px;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.contact ul li a:last-child {
+    margin-bottom: 0;
+}
+
+/* style footer */
+footer {
+    background-color: var(--secondary-background);
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
 }
