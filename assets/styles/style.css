@@ -132,7 +132,7 @@ header nav ul li a {
     text-align: center;
 }
 
-.first-child {
+.notice-me {
     flex-basis: 100%;
     order: -1;
 }
